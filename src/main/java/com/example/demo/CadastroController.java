@@ -36,7 +36,7 @@ public class CadastroController {
             usuarioCookie.setMaxAge(60 * 10);
             response.addCookie(usuarioCookie);
 
-            response.sendRedirect("static/pagina.html");
+            response.sendRedirect("/pagina.html");
         }
     }
 }
