@@ -21,7 +21,7 @@ public class CadastroController {
         String password = request.getParameter("password");
 
         if ("usuario".equalsIgnoreCase(email)) {
-            response.sendRedirect("http://localhost:8080/cadastro.html");
+            response.sendRedirect("/cadastro.html");
         } else {
 
             HttpSession session = request.getSession();
@@ -36,7 +36,7 @@ public class CadastroController {
             usuarioCookie.setMaxAge(60 * 10);
             response.addCookie(usuarioCookie);
 
-            response.sendRedirect("http://localhost:8080/pagina.html");
+            response.sendRedirect("static/pagina.html");
         }
     }
 }
